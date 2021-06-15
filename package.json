@@ -4,7 +4,7 @@
     "description": "colour flipper",
     "main": "app.js",
     "scripts": {
-        "deploy": "gh-pages -d Colour_Flipper"
+        "deploy": "gh-pages -d dist"
     },
     "author": "",
     "license": "ISC",
