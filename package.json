@@ -8,7 +8,7 @@
     },
     "author": "",
     "license": "ISC",
-    "homepage": "https://SiewTS.github.io/colourflipper",
+    "homepage": "https://siewts.github.io/colourflipper",
     "dependencies": {
         "gh-pages": "^3.2.1"
     }
