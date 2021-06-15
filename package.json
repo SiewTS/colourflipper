@@ -1,0 +1,15 @@
+{
+    "name": "colour_flipper",
+    "version": "1.0.0",
+    "description": "colour flipper",
+    "main": "app.js",
+    "scripts": {
+        "deploy": "gh-pages -d Colour_Flipper"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://SiewTS.github.io/colourflipper",
+    "dependencies": {
+        "gh-pages": "^3.2.1"
+    }
+}
