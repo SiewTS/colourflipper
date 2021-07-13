@@ -1,0 +1,111 @@
+@use "config";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    background-color: config.$white;
+    color: config.$black;
+}
+.nav {
+    height: 80px;
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: config.$bgcolour;
+    color: config.$white;
+    font-weight: 600;
+    position: fixed;
+}
+// Navbar
+.nav__navbar {
+    width: 100%;
+    max-width: config.$max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+.navbar__colours {
+    &:hover {
+        color: config.$yellow;
+        cursor: pointer;
+    }
+}
+// Main
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+// container
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 437px;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 5px;
+    background-color: config.$bgcolour;
+    color: config.$grey;
+    text-align: center;
+    box-shadow: 5px 5px config.$shadowcolor;
+}
+// colourcode container
+.colourcode-container__colourcode {
+    text-transform: uppercase;
+}
+.container-text {
+    margin-top: 1rem;
+    width: 70%;
+    color: config.$yellow;
+}
+// Button
+.main__cta-btn {
+    background-color: config.$grey;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 2ms ease-in-out 0.5ms;
+    box-shadow: 3px 3px config.$shadowcolor2;
+
+    // on hover
+    &:hover {
+        background-color: config.$yellow;
+        cursor: pointer;
+        left: 5px;
+    }
+    &:active {
+        box-shadow: 1px 1px config.$shadowcolor3;
+        transform: translateY(2px);
+        transform: translateX(2px);
+    }
+}
+// Media Queries
+@media (max-width: 320px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav {
+        height: auto;
+    }
+    .nav__navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .navbar__colours {
+        margin: 0.3rem auto;
+    }
+}
